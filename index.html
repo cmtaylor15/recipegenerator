@@ -7,39 +7,44 @@
     <title>Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Recipe Generator</h1>
-    </header>
-    <div>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter type of recipe"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-    </div>
-    <div>
+    <div class="container">
+      <header>
+        <h1>AI Recipe Generator</h1>
+      </header>
+
+      <div>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter type of recipe"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+      </div>
+      <div class="recipe-output">
+        Ingredients <br />
+        Instructions
+      </div>
       <br />
-      Ingredients <br />
-      Instructions
+      <footer>
+        This was coded by
+        <a href="https://github.com/cmtaylor15" target="_blank"
+          >Chelsea Taylor</a
+        >
+        and is
+        <a href="https://github.com/cmtaylor15/recipegenerator" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://easier-mealplans.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
-    <br />
-    <footer>
-      This was coded by
-      <a href="https://github.com/cmtaylor15" target="_blank">Chelsea Taylor</a>
-      and is
-      <a href="https://github.com/cmtaylor15/recipegenerator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and hosted on
-      <a href="https://easier-mealplans.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
     <script src="src/index.js"></script>
   </body>
 </html>
