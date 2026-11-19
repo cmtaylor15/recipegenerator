@@ -14,11 +14,11 @@
         <h1>AI Recipe Generator</h1>
       </header>
 
-      <div>
+      <div class="generator-container">
         <form id="recipe-generator-form">
           <input
             type="text"
-            placeholder="Enter type of recipe"
+            placeholder="Enter type of recipe or ingredient"
             autofocus
             required
             autocomplete="off"
@@ -27,8 +27,9 @@
           />
           <input type="submit" class="submit-button" />
         </form>
+        <div class="hint">Example: chicken, eggplant pasta or sage</div>
       </div>
-      <div class="recipe-output" id="recipe"></div>
+      <div class="recipe-output hidden" id="recipe"></div>
       <br />
       <footer>
         This was coded by
